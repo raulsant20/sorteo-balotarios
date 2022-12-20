@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>BALOTARIO ANTONIO ENCINAS</title>
+</head>
+<body>
+  <div id="content">
+    <h3 id="title">Datos</h3>
+    <div id="items">
+      <form >
+        <label for="course">
+          <input 
+          type="checkbox" 
+          name=""
+          id="" 
+          checked="true"
+          >Curso: <input 
+                  type="text" 
+                  id="course" 
+                  value="Inglés">
+        </label>
+
+        <label for="total-questions">
+          Total de preguntas:  <input 
+                                type="number" 
+                                id="total-questions" 
+                                value="15">
+        </label>
+
+        <label for="total-evaluated">
+          Cantidad a evaluar: <input 
+                              type="number" 
+                              id="total-evaluated" 
+                              value="5">
+        </label>
+
+        <label for="teacher">
+          <input 
+          type="checkbox" 
+          name="" 
+          id="" 
+          checked="true"
+          >Profesor: <input 
+                      type="text" 
+                      id="teacher" 
+                      value="Raúl Santa Cruz">
+        </label>
+
+        <label for="topics">
+          <input 
+          type="checkbox" 
+          name="" 
+          id="" 
+          checked="true"
+          >Temas: 
+        </label>
+        
+        <textarea name="" id="topics" cols="30" rows="10">
+1. Personal pronouns (pronombres personales)
+2. Days of the week (días de la semana)
+3. Shapes (formas)
+4. Colors (colores)
+5. Countries (paises)
+6. Farm animals (animales de granja)
+7. Numbers to 100 (números hasta el 100)
+8. The months (los meses)
+9. The seasons (las estaciones)
+10. Can can't (poder, no poder)
+11. Parts of the body (partes del cuerpo)
+12. Prepositions of place (preposiciones de lugar)
+13. Clothes (ropa)
+14. Places (lugares)
+15. Verbs (verbos)</textarea>
+
+    </form>
+<button onclick="toss()" id="toss">Sorteo</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+form, #container {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+#questions-selected{
+  display: flex;
+  flex-direction: row;
+}
