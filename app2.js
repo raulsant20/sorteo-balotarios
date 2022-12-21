@@ -41,7 +41,17 @@ const toss = () => {
     questions[i].innerHTML = sortedQuestions[i]
   }
   
+  const element = document.getElementById("results")
+  console.log(element)
+  element.scrollIntoView(true)
+}
+
+const settings = () => {
+  const element = document.getElementById("body")
+  console.log(element)
+  element.scrollIntoView(true)
 }
 
 tossButton.addEventListener("click", toss)
 newTossButton.addEventListener("click", toss)
+settingButton.addEventListener("click", settings)

@@ -1,15 +1,55 @@
-form, #container {
+body{
+  background-color: #CBEDD5;
+
+}
+
+#content{
+  background-color: #CBEDD5;
+  height: 95vh;
+  padding: 10px 20px;
+}
+
+form {
+  height: 60vh;
   display: flex;
   flex-direction: column;
 }
 
-.question {
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
+label input {
+  margin-top: 10px;
+  width: 30vw;
 }
 
-#questions-selected{
+#results {
+  margin-top: 30px;
+  background-color: #CBEDD5;
+  height: 95vh;
+  padding: 10px 20px;
+}
+
+#container {
+
+  height: 50vh;
+}
+
+#container>div{
+  margin-top: 15px;
+}
+
+#questions-selected {
+  width: 60vw;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+}
+
+.question {
+  background-color: #97DECE;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
