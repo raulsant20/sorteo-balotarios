@@ -50,12 +50,12 @@ const toss = () => {
 
   if(parseInt(totalQuestions) > parseInt(totalEvaluated)){
     sortedQuestions =  tossing(totalQuestions, totalEvaluated)
+    creatingDivs(sortedQuestions)
+      
+    const element = document.getElementById("results")
+    element.scrollIntoView(true)
   } else alert("La cantidad a evaluar debe ser menor que el total de preguntas")
 
-  creatingDivs(sortedQuestions)
-    
-  const element = document.getElementById("results")
-  element.scrollIntoView(true)
 }
 
 const settings = () => {
