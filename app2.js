@@ -38,18 +38,19 @@ const creatingDivs = (arr) => {
     const div = document.createElement("div")
     div.innerHTML = number
     div.setAttribute("class", `question ${number}`)
-    console.log(div)
     divContainer.appendChild(div)
   })
 }
 
 const toss = () => {
-  let sortedQuestions
+  let sortedQuestions = []
   setValues()
   const totalQuestions = document.getElementById("total-questions").value
   const totalEvaluated = document.getElementById("total-evaluated").value
-  sortedQuestions =  tossing(totalQuestions, totalEvaluated)
-  console.log(sortedQuestions)
+
+  if(parseInt(totalQuestions) > parseInt(totalEvaluated)){
+    sortedQuestions =  tossing(totalQuestions, totalEvaluated)
+  } else alert("La cantidad a evaluar debe ser menor que el total de preguntas")
 
   creatingDivs(sortedQuestions)
     
@@ -59,7 +60,7 @@ const toss = () => {
 
 const settings = () => {
   const element = document.getElementById("body")
-  console.log(element)
+
   element.scrollIntoView(true)
 }
 
