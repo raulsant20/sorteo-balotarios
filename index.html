@@ -8,93 +8,38 @@
   <title>BALOTARIO ANTONIO ENCINAS</title>
 </head>
 <body id="body">
+  
   <div id="content">
     <h3 id="title">Datos</h3>
     <div id="items">
       <form >
-        <label for="course">
-          <!-- <input 
-          type="checkbox" 
-          name=""
-          id="" 
-          checked="true"
-          >-->
-          Curso: <br/><input  
-                  type="text" 
-                  id="course" 
-                  value="Inglés">
+        <label for="course">Curso: <br/>
+          <input type="text" id="course" value="Inglés">
         </label>
         <br/>
-        <label for="total-questions">
-          Total de preguntas:  <br/><input 
-                                type="number" 
-                                id="total-questions" 
-                                value="15">
+        <label for="total-questions">Total de preguntas:  <br/>
+          <input type="number" id="total-questions" value="15">
         </label>
         <br/>
-        <label for="total-evaluated">
-          Cantidad a evaluar: <br/><input 
-                              type="number" 
-                              id="total-evaluated" 
-                              value="5">
+        <label for="total-evaluated">Cantidad a evaluar: <br/>
+          <input type="number" id="total-evaluated" value="5">
         </label>
         <br/>
-        <label for="teacher">
-          <!-- <input 
-          type="checkbox" 
-          name="" 
-          id="" 
-          checked="true"
-          >--> Profesor: 
-          <br/><input  
-                      type="text" 
-                      id="teacher" 
-                      value="Raúl Santa Cruz">
+        <label for="teacher">Profesor: <br/>
+          <input type="text" id="teacher" value="Raúl Santa Cruz">
         </label>
-
-        <!-- <label for="topics">
-          <input 
-          type="checkbox" 
-          name="" 
-          id="" 
-          checked="true"
-          >Temas: 
-        </label>
-        
-        <textarea name="" id="topics" cols="30" rows="10">
-1. Personal pronouns (pronombres personales)
-2. Days of the week (días de la semana)
-3. Shapes (formas)
-4. Colors (colores)
-5. Countries (paises)
-6. Farm animals (animales de granja)
-7. Numbers to 100 (números hasta el 100)
-8. The months (los meses)
-9. The seasons (las estaciones)
-10. Can can't (poder, no poder)
-11. Parts of the body (partes del cuerpo)
-12. Prepositions of place (preposiciones de lugar)
-13. Clothes (ropa)
-14. Places (lugares)
-15. Verbs (verbos)</textarea> -->
-
       </form>
       <button id="toss">Sorteo</button>
     </div>
   </div>
+
   <div id="results">
     <h3>Resultados</h3>
     <div id="container">
       <div>Curso: <span id="result-course"></span></div>
       <div>Profesor: <span id="result-teacher"></span></div>
       <div>Preguntas: <span id="result-questions"></span></div>
-      <div id="questions-selected">
-        <div class="question 1"></div>
-        <div class="question 2"></div>
-        <div class="question 3"></div>
-        <div class="question 4"></div>
-        <div class="question 5"></div>
-      </div>
+      <div id="questions-selected"></div>
     </div>
     <div class="buttons">
       <button id="new-toss">Nuevo Sorteo</button>

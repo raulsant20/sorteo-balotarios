@@ -21,14 +21,29 @@ const tossing = (totalQuestions, totalEvaluated) => {
       sortedQuestions.push(question)
       i++
     }
-  }
-    
+  } 
   return sortedQuestions.sort((a,b)=>a-b)
   
 }
 
+const creatingDivs = (arr) => {
+  const divContainer = document.getElementById("questions-selected")
+  const divs = document.getElementsByClassName("question")
+  
+  while(divs.length){
+    divContainer.removeChild(divs[0])
+  }
+
+  arr.map(number => {
+    const div = document.createElement("div")
+    div.innerHTML = number
+    div.setAttribute("class", `question ${number}`)
+    console.log(div)
+    divContainer.appendChild(div)
+  })
+}
+
 const toss = () => {
-  // console.log("Estamos dentro del boton sorteo")
   let sortedQuestions
   setValues()
   const totalQuestions = document.getElementById("total-questions").value
@@ -36,13 +51,9 @@ const toss = () => {
   sortedQuestions =  tossing(totalQuestions, totalEvaluated)
   console.log(sortedQuestions)
 
-  const questions = document.getElementsByClassName("question")
-  for(let i=0; i<totalEvaluated; i++){
-    questions[i].innerHTML = sortedQuestions[i]
-  }
-  
+  creatingDivs(sortedQuestions)
+    
   const element = document.getElementById("results")
-  console.log(element)
   element.scrollIntoView(true)
 }
 
